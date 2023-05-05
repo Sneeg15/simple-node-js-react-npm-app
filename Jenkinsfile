@@ -4,9 +4,9 @@ pipeline {
             CI = 'true'
         }
     stages {
-        stage('Build') {
+        stage('npm version') {
             steps {
-                sh 'npm install --force'
+                sh 'npm version'
             }
         }
         stage('Test') {
